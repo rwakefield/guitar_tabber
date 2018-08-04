@@ -1,0 +1,14 @@
+.chord-diagram {
+  width: 250px;
+  min-height: 200px;
+}
+
+.chord-diagram td, .chord-diagram th {
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.append-chord-icon i {
+  color: green;
+}

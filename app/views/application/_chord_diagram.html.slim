@@ -1,0 +1,46 @@
+div id="#{chord.name}-chord"
+  table.table.table-sm.table-striped.table-bordered.chord-diagram
+    thead
+      tr
+        th scope='col'
+          = link_to '#', class: 'append-chord-icon', data: { notes: chord.notes, name: chord.name } do
+            = fa_icon 'plus-circle'
+        th.chord_name scope='col' colspan=6
+          = "#{chord.name} Chord"
+    tbody
+      tr class = 'fret-1'
+        th scope='row'
+          | 1
+        td class = 'string-1'
+        td class = 'string-2'
+        td class = 'string-3'
+        td class = 'string-4'
+        td class = 'string-5'
+        td class = 'string-6'
+      tr class = 'fret-2'
+        th scope='row'
+          | 2
+        td class = 'string-1'
+        td class = 'string-2'
+        td class = 'string-3'
+        td class = 'string-4'
+        td class = 'string-5'
+        td class = 'string-6'
+      tr class = 'fret-3'
+        th scope='row'
+          | 3
+        td class = 'string-1'
+        td class = 'string-2'
+        td class = 'string-3'
+        td class = 'string-4'
+        td class = 'string-5'
+        td class = 'string-6'
+      tr class = 'fret-4'
+        th scope='row'
+          | 4
+        td class = 'string-1'
+        td class = 'string-2'
+        td class = 'string-3'
+        td class = 'string-4'
+        td class = 'string-5'
+        td class = 'string-6'

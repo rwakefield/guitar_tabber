@@ -1,0 +1,69 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.sidebar, .sticky-top {
+  padding: 0;
+}
+
+#link-nav {
+  width: 100%;
+  font-size: 15px;
+  height: 36px;
+  margin-bottom: 15px;
+  margin-top: -1px;
+  border-bottom: 2px solid #dee2e6;
+  border-top: 2px solid #dee2e6;
+}
+
+#entered-notes {
+  min-width: 150px;
+}
+
+#entered-notes .card-body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 35px;
+}
+
+#entered-notes {
+  margin-bottom: 15px;
+}
+
+#fret-board td, #fret-board th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#fret-board td {
+  color: #3a8f9b;
+}
+
+#fret-board td.active {
+  background-color: #fdcc5b;
+}
+
+#fret-board td.active i {
+  color: #4a62ab;
+}
+
+.main-container {
+  padding: 0;
+}
+
+#view-content {
+  padding: 15px;
+}

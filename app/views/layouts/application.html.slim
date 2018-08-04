@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title GuitarTabber
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    .container-fluid
+      nav.navbar.navbar-dark.sticky-top.bg-dark.row
+        .col-2
+          = link_to 'GuitarTabber', root_path, class: 'navbar-brand'
+        .col-8
+        .col-2
+          ul.navbar-nav.float-right
+            li.nav-item
+              <a class="nav-link" href="#">Sign out</a>
+      .row
+        .col-2.bg-light.sidebar
+          .sidebar-sticky
+            .flex-column
+              = render partial: 'fret_board'
+        .col-10.main-container
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light#link-nav
+            ul.navbar-nav
+              li.nav-item
+                button#chord-picker-button  type='button' class='btn btn-sm btn-outline-dark'
+                  = fa_icon 'folder-open-o', text: 'Stored'
+
+          #chord-picker
+            = render partial: 'chord_picker'
+          #view-content
+            = yield
+    footer.footer
+      .container
+        span.text-muted
+          Place sticky footer content here.

@@ -1,0 +1,10 @@
+.container-fluid
+  .row
+    .col-10
+      - chords_presenter.chords.each do |chord|
+        = render partial: 'chord_diagram', locals: { chord: chord }
+    .col-2
+      nav.nav.flex-sm-column
+        - chords_presenter.chord_names.each do |chord_name|
+          = link_to chord_name, "##{chord_name}", class: 'nav-link', data: { name: chord_name }
+
