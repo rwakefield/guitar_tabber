@@ -1,6 +1,7 @@
 class Chord < ApplicationRecord
   serialize :diagram
   validates_presence_of :name, :diagram
+  validates_uniqueness_of :name
   validate :diagram_must_be_size_six
 
   def diagram_must_be_size_six
