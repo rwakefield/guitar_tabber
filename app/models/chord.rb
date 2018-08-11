@@ -12,7 +12,7 @@ class Chord < ApplicationRecord
 
   def notes
     notes = []
-    diagram.reverse.each_with_index do |fret, index|
+    diagram.each_with_index do |fret, index|
       string = 6 - index
       note = "#{string},#{fret}"
       notes.push(note)
@@ -20,4 +20,3 @@ class Chord < ApplicationRecord
     notes.join('|')
   end
 end
-
