@@ -31,4 +31,11 @@ describe 'Chord' do
       chord.errors.full_messages.must_include 'Name has already been taken'
     end
   end
+
+  describe '#notes' do
+    it 'returns the notes in a string,fret format separated by a "|"' do
+      chord = Chord.new(name: 'G', diagram: [3, 2, 0, 0, 3, 3])
+      chord.notes.must_equal '6,3|5,2|4,0|3,0|2,3|1,3'
+    end
+  end
 end
