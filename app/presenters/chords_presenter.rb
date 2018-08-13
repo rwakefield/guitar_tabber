@@ -6,6 +6,6 @@ class ChordsPresenter
   end
 
   def chord_names
-    @chord_names ||= chords.map(&:name)
+    @chord_names ||= chords.map(&:name).sort
   end
 end
