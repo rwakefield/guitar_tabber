@@ -2,16 +2,9 @@
   .col-9
     h2 Guitar Tabber
     p
-      | Enter in notes by clicking on the icons to the left. If you want to enter a chord please click the lock icon first. The chord will be entered after the lock icon is unclicked.
+      = t(:tabber_help)
   .col-3
-    <div class="card float-right" id="entered-notes">
-      <div class="card-header">Entered Notes</div>
-      <div class="card-body">
-        <div class="card-text">
-          <p id="snippet">
-        </div>
-      </div>
-    </div>
+    = render partial: 'entered_notes'
 
 #full-tab
   table.table.table-sm.table-striped.table-bordered.tab-bar
