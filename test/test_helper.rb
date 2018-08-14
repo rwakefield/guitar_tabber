@@ -6,6 +6,7 @@ require 'database_cleaner'
 
 DatabaseCleaner.strategy = :truncation
 class MiniTest::Spec
+  include FactoryBot::Syntax::Methods
   before :each do
     DatabaseCleaner.clean
   end
