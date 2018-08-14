@@ -20,5 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   tabber_help: 'Enter in notes by clicking on the icons to the left. If you want to enter a chord please click the lock icon first. The chord will be entered after the lock icon is unclicked.'
+  activerecord:
+    attributes:
+      tab:
+        encoded_song: 'Song'
