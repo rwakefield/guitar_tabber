@@ -69,8 +69,8 @@ $(document).ready(function() {
   var blankTabBar = $('.tab-bar').clone();
   $('.fa-music').click(function() {
     var icon = $(this);
-    if (icon.hasClass('active') === false) {
-      var iconBox = icon.closest('td')
+    var iconBox = icon.closest('td');
+    if (iconBox.hasClass('active') === false) {
       var note = icon.data('note');
       toggleActiveNote(iconBox, note);
       if (boardIsLocked() === false) {
@@ -80,7 +80,11 @@ $(document).ready(function() {
       } else {
         rebuildSnippet();
       }
+    } else {
+      iconBox.removeClass('active');
+      rebuildSnippet();
     }
+
     if (addNewTabBar() === true) {
       $('#full-tab').append(blankTabBar);
       blankTabBar = blankTabBar.clone();
