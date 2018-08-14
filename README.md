@@ -1,4 +1,4 @@
-### Congratulations, you found this!
+## Congratulations, you found this!
 
 What you are looking at is a small application to show off a few of my skills which are:
 
@@ -15,6 +15,11 @@ It allows you to manually create a guitar tab by clicking on notes, locking note
 You can see the app in action here:
 
 * https://drive.google.com/file/d/1dHwH1ZGsyiQVe7jHt3stVWRPIWnLtHCd/view?usp=sharing
+
+
+### Setup
+
+* `rake loader:load_chords`
 
 **Note: I am still very much working on this application so don’t judge too hard (you can track the issues to see where it is going)**
 
